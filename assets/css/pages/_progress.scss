@@ -1,0 +1,35 @@
+.document-page {
+  .document-section {
+    padding-top: 20px;
+  }
+  h1 {
+    @include phone {
+      margin-bottom: 20px;
+    }
+  }
+  @import "../libs/fancybox/fancybox.min.css";
+  .document-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    @include phone {
+      margin: -10px;
+    }
+  }
+  .document-item {
+    display: flex;
+    flex: 0 0 calc(100% / 3 - 30px);
+    margin: 15px;
+    cursor: zoom-in;
+    @include phone {
+      flex: 0 0 calc(100% / 2 - 20px);
+      margin: 10px;
+    }
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+}

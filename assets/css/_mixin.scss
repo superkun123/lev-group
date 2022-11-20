@@ -1,0 +1,64 @@
+//base
+@mixin pseudo-element($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin translateX() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin translateY() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+@mixin translateCenter() {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+@mixin note {
+  @media screen and (max-width: $note){
+    @content;
+  }
+}
+
+
+@mixin tablet {
+  @media screen and (max-width: $tablet){
+    @content;
+  }
+}
+
+@mixin phone {
+  @media screen and (max-width: $phone){
+    @content;
+  }
+}
+
+@mixin sm-phone {
+  @media screen and (max-width: $sm-phone){
+    @content;
+  }
+}
+
+@keyframes display-menu {
+  0% {
+    display: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 0.4s;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.4s;
+  }
+}
+
+
+

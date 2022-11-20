@@ -1,0 +1,289 @@
+// company
+.aside-menu-new {
+  background-color: $grey;
+  @include tablet {
+    background-image: url(../../assets/img/arrow-new.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding-right: 5px;
+  }
+}
+
+.aside-menu-new ul {
+  margin: 0;
+  list-style: none;
+  padding: 20px 0;
+  @include tablet {
+    display: flex;
+    overflow: scroll;
+    max-width: 85%;
+  }
+  @include phone {
+    max-width: 88%;
+  }
+
+  .current-menu-item,
+  .current-post-ancestor{
+    background-color: #fff;
+    border-left: 4px solid #7D88A3;
+
+    a {
+      margin-left: -4px;
+    }
+
+    @include tablet {
+      border-left: none;
+      background: none;
+    }
+  }
+
+  li {
+    font-size: 18px;
+    @include tablet {
+      white-space: nowrap;
+    }
+
+    a {
+      display: block;
+      font-size: 18px;
+      padding: 5px 30px;
+      text-decoration: none;
+      font-weight: normal;
+      @include phone {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+
+.company-page {
+  .company-news {
+    background: $grey;
+    overflow: hidden;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    @include tablet {
+      padding-bottom: 60px;
+    }
+  }
+
+  .tab-header {
+
+    .tab-header__item {
+      background-color: transparent;
+      border-bottom: 4px solid transparent;
+      transition: border-bottom-color 0.4s;
+      &.active {
+        border-bottom-color: #7D88A3;
+        text-align: center;
+      }
+    }
+
+    @include tablet {
+      overflow: scroll;
+
+    }
+  }
+
+  .about-company {
+    padding-bottom: 50px;
+  }
+  .tab-content__item {
+    min-height: 270px;
+    background-color: #F6F6F6;
+  }
+}
+
+
+ .about-company-row::after {
+  display: none;
+}
+
+
+.company-page .about-company {
+  padding-top: 0;
+  margin-bottom: 0;
+  height: 100%;
+  display: block;
+  @include tablet {
+    margin-top: 30px;
+  }
+
+  .about-company__description {
+    padding: 40px 60px;
+    height: 100%;
+    max-width: 100%;
+    &  .about-company-description__text {
+      max-width: 100%;
+    }
+    @include tablet {
+      padding: 25px;
+    }
+  }
+
+  .about-company-row {
+    margin-bottom: 0;
+  }
+
+  .about-company-description__title {
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  .about-company-description__text {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .about-company_bold-text {
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+}
+
+.company-group {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  @include phone {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  .company-group__title {
+    margin-bottom: 40px;
+    @include phone {
+      margin-bottom: 30px;
+      margin-left: -15px;
+    }
+  }
+
+  .services-card {
+    padding: 25px 40px;
+    max-width: 30%;
+    margin-right: 0;
+    @include note {
+      padding: 20px;
+    }
+    @include tablet {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+    @include phone {
+      padding: 15px;
+    }
+  }
+}
+
+.company-history {
+  margin-bottom: 50px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    @include phone {
+      margin-bottom: 20px;
+    }
+  }
+
+  .company-history__subtitle {
+    max-width: 70%;
+    margin-bottom: 40px;
+    @include phone {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+
+  .js-tab-content .col-lg-12 p {
+    background-color: $grey;
+    padding: 25px 50px;
+    font-size: 24px;
+    @include tablet {
+      font-size: 16px;
+      padding: 25px;
+    }
+    @include phone {
+      padding: 25px 0;
+    }
+  }
+}
+
+.company-lion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  @include phone {
+    display: block;
+  }
+
+  img {
+    display: block;
+    margin-right: 100px;
+    @include phone {
+      margin-bottom: 30px;
+    }
+  }
+
+  p {
+    font-weight: bold;
+    font-size: 64px;
+    color: #7D88A3;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 40px;
+    }
+    @include phone {
+      font-size: 30px;
+    }
+  }
+}
+
+.partners-title {
+  margin-bottom: 40px;
+  @include phone {
+    margin-bottom: 20px;
+  }
+}
+
+
+.partners-logos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -23px;
+  @include phone {
+    margin: -10px;
+  }
+
+  img {
+    display: flex;
+    max-width: calc(100% / 6 - 46px);
+    margin: 0 23px;
+    object-fit: contain;
+    @include tablet {
+      max-width: calc(100% / 3 - 46px);
+    }
+    @include phone {
+      max-width: calc(100% / 2 - 20px);
+      margin: 10px;
+    }
+  }
+}
+
+.patnets {
+  margin-bottom: 70px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+}
+

@@ -1,0 +1,132 @@
+// footer
+.new-main-footer {
+  background-color: $black;
+  color: $white;
+  padding-top: 50px;
+  padding-bottom: 85px;
+  @include tablet {
+    padding-bottom: 30px;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-menu li a {
+    color: $white;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+  }
+
+  .rights-label {
+    color: $white;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    @include tablet {
+      margin-top: 30px;
+    }
+  }
+
+  .add-footer-row {
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+
+  .footer-rights ul {
+    max-width: 200px;
+    list-style: none;
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  .footer-rights a, .footer-rights p {
+    color: $white;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .footer-menu li {
+    color: $white;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .footer-menu:not(.footer-menu_contacts) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  .footer-politics {
+    display: flex;
+    flex-direction: column;
+    @include phone {
+      margin-top: 10px;
+    }
+
+    a {
+      display: flex;
+      color: white;
+      font-size: 16px;
+
+      &:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.footer-logo {
+  margin: 0 auto 52px 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  outline: none;
+
+
+  img {
+    width: 423px;
+  }
+
+
+}
+
+.social-medias {
+  display: flex;
+  padding-top: 20px;
+  margin-bottom: 20px;
+
+  a {
+    display: block;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+.social-medias-text {
+  a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+}

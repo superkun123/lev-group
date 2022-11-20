@@ -1,0 +1,22 @@
+//base
+@import '../libs/_normalize.scss';
+@import 'bootstrap-grid.min.css';
+@import '../libs/slick/_slick.scss';
+
+// global
+@import '_vars';
+@import '_mixin.scss';
+@import 'old.scss';
+@import 'global.scss';
+@import 'components/header.scss';
+@import 'components/footer.scss';
+
+// pages
+@import 'pages/main-page.scss';
+@import 'pages/company-page.scss';
+@import 'pages/team-page';
+@import 'pages/services-page';
+@import 'pages/blog-page.scss';
+@import 'pages/news-page.scss';
+@import 'pages/teammate-page.scss';
+@import 'pages/progress.scss';

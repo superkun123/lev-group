@@ -1,0 +1,166 @@
+.news-page {
+  @extend .company-page;
+
+  a {
+    text-decoration: none;
+  }
+
+  .aside-menu-new {
+    height: auto;
+  }
+
+  .news-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: $blue;
+    font-weight: bold;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  .news-text {
+    font-size: 18px;
+  }
+
+  .news-block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $grey;
+    padding: 25px;
+  }
+
+
+  .col-lg-12 .news-block {
+    display: flex;
+    justify-content: space-between;
+    @include tablet {
+      display: block;
+    }
+
+    .news-title {
+      font-size: 36px;
+      max-width: 47%;
+      text-transform: uppercase;
+      @include tablet {
+        margin-bottom: 20px;
+        font-size: 18px;
+        max-width: 100%;
+      }
+    }
+
+    .news-text {
+      font-size: 24px;
+      max-width: 47%;
+      @include tablet {
+        font-size: 18px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .col-lg-6 .news-block {
+
+    .news-title {
+      font-size: 36px;
+      text-transform: uppercase;
+      @include tablet {
+        margin-bottom: 20px;
+        font-size: 18px;
+        max-width: 100%;
+      }
+      @include phone {
+        margin-bottom: 5px;
+      }
+    }
+
+    .news-text {
+      font-size: 24px;
+      @include tablet {
+        font-size: 18px;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .news-section {
+    @include tablet {
+      margin-top: 30px;
+    }
+
+  }
+
+  .company-container .col-lg-10 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .news-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px -15px;
+    @include phone {
+      flex-direction: column;
+      max-width: 100%;
+    }
+  }
+
+  .news-item {
+    margin: 15px 15px;
+    width: 100%;
+    @include phone {
+      flex-direction: column;
+      min-width: initial;
+    }
+  }
+
+  .news-item:nth-child(6n - 4),
+  .news-item:nth-child(6n - 3) {
+    flex: 0 0 calc(100% / 2 - 30px);
+    min-width: auto;
+    @include phone {
+      flex: 1;
+      min-width: initial;
+    }
+  }
+
+  .news-item:nth-child(6n),
+  .news-item:nth-child(6n - 1),
+  .news-item:nth-child(6n - 2) {
+    flex: 0 0 calc(100% / 3 - 30px);
+    min-width: auto;
+    @include phone {
+      flex: 1;
+      min-width: initial;
+    }
+  }
+
+
+  .paging-wrap {
+    margin-top: 30px;
+    .nav-links {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      display: flex;
+      margin: 0 5px;
+      transition: color 0.4s;
+      &:hover {
+        color: $blue;
+      }
+    }
+    .current {
+      color: $blue;
+    }
+    //.next {
+    //  margin-left: 5px;
+    //}
+    //.prev {
+    //  margin-right: 5px;
+    //}
+  }
+}
+
+

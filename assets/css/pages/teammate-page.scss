@@ -1,0 +1,117 @@
+.teammate-page {
+  @extend .company-page;
+
+  .aside-menu-new {
+    height: auto;
+  }
+
+  .person-img {
+    width: 428px;
+    height: 525px;
+    @include tablet {
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  .person-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  .person-name, .person-desc-title, .person-achiv-title {
+    font-weight: bold;
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    @include tablet {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .person-prof {
+    text-transform: uppercase;
+    font-size: 36px;
+    color: $blue;
+    @include tablet {
+      font-size: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .person-desc-text {
+    font-size: 24px;
+    margin-bottom: 40px;
+    @include tablet {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .person {
+    display: flex;
+    margin-left: -30px;
+    margin-right: -30px;
+    @include tablet {
+      display: block;
+      margin-top: 30px;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
+
+  .person-descript, .person-direction {
+    margin-bottom: 120px;
+    @include tablet {
+      margin-bottom: 60px;
+    }
+  }
+
+  .person-achiv-card {
+    background-color: $grey;
+    padding: 30px 35px;
+    margin-bottom: 30px;
+    @include tablet {
+      padding: 20px;
+    }
+  }
+
+  .achiv-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: $blue;
+    @include tablet {
+      margin-bottom: 10px;
+    }
+  }
+
+  .achiv-text {
+    font-size: 18px;
+  }
+
+  .sticky {
+    position: fixed;
+    z-index: 101;
+  }
+
+  .stop {
+    position: relative;
+    z-index: 101;
+  }
+
+  .person-achiv-title {
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+
+}
